@@ -1,1 +1,6 @@
 .DS_Store
+fitness_poses_images_in
+fitness_poses_csvs_out
+pt_mov
+*.pyc
+__pycache__/
