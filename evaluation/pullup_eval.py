@@ -28,10 +28,10 @@ def feedback_pullup_pose(result):
 
         body_angle = calculate_angle(shoulder, hip, knee)
 
-        print(f"Hand: {hand} Mouth_y: {mouth}")
+        print(f"Hand: {hand_y} Mouth_y: {mouth_y}")
         print(f"Body Angle: {body_angle:.2f} degrees")
 
-        feedback = evaluate_pullup_pose(body_angle, hand, mouth)
+        feedback = evaluate_pullup_pose(body_angle, hand_y, mouth_y)
 
         if len(feedback) == 0:
             feedback.append("올바른 자세입니다.")

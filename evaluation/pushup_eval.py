@@ -28,9 +28,6 @@ def feedback_pushup_pose(result):
         elbow_angle = calculate_angle(shoulder, elbow, wrist)
         body_angle = calculate_angle(shoulder, hip, knee)
 
-        print(f"Elbow Angle: {elbow_angle:.2f} degrees")
-        print(f"Body Angle: {body_angle:.2f} degrees")
-
         feedback = evaluate_pushup_pose(elbow_angle, body_angle)
 
         if len(feedback) == 0:
